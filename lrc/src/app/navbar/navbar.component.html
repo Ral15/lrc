@@ -1,0 +1,35 @@
+<div class="lrc-navbar">
+    <div *ngIf="status" class="lrc__status">
+        <div class="text">ONLINE</div>
+        <img src="assets/images/happy.svg" class="icon">
+    </div>
+
+    <div *ngIf="!status" class="lrc__status">
+        <div class="text">OFFLINE</div>
+        <img src="assets/images/sad.svg" class="icon">
+    </div>
+
+    <div class="lrc__playcontent">
+        <img src="assets/images/lrc.svg" class="main__logo">
+        <img *ngIf="!play" src="assets/images/play.svg" class="media__logo" (click)="toggleWidget()">
+        <div *ngIf="play" (click)="toggleWidget()" class="media__logo"><span class="oi oi-media-pause"></span></div>
+        <div class="title__player">{{player.title}}</div>
+    </div>
+
+    <div class="lrc__toolbar">
+        <div class="tool" id="search">
+            <img src="assets/images/search.svg" class="__icon">
+        </div>
+        <div class="tool">
+            <img src="assets/images/volume.svg" class="__icon">
+        </div>
+    </div>
+
+    <iframe #mixcloud
+        class="navbar__player"
+        allow="autoplay"
+        src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fspartacus%2Fparty-time%2F&amp;hide_cover=1"
+        frameborder="0">
+    </iframe>
+
+</div>

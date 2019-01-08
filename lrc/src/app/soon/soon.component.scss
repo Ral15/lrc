@@ -1,0 +1,141 @@
+.lrc-soon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .proxx__image {
+        // width: 380px;
+        // height: 380px;
+        // background: url('/assets/images/proxprox.svg') no-repeat;
+        text-align: center;
+        // display: block;
+        // margin-top: 50%;
+        // margin-left: auto;
+        // margin-right: auto;
+        // z-index: 1;
+        // position: absolute;
+        // width: 
+    //      -webkit-animation:spin 4s linear infinite;
+    // -moz-animation:spin 4s linear infinite;
+    // animation:spin 4s linear infinite;
+        .centerer {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+    .world__image{
+        height: 300px;
+        width: 300px;
+        // display: block;
+        // // margin-top: 50%;
+        // margin-right: auto;
+        // margin-left: auto;
+        // z-index: 2;
+        // position: absolute;
+         position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    // animation
+
+    // @keyframes flickerAnimation {
+    //     0%   { opacity:1; }
+    //     10%   {opacity: 0.9}
+    //     20%   {opacity: 0.8}
+    //     30%   {opacity: 0.7}
+    //     40%   {opacity: 0.6}
+    //     50%   {opacity: 0.5}
+    //     60%   {opacity: 0.4}
+    //     70%   {opacity: 0.3}
+    //     80%   {opacity: 0.2}
+    //     90%   {opacity: 0.1}
+    //     // 50%  { opacity:0; }
+    //     // 100% { opacity:1; }
+    // }
+    // @-o-keyframes flickerAnimation{
+    //             0%   { opacity:1; }
+    //     10%   {opacity: 0.9}
+    //     20%   {opacity: 0.8}
+    //     30%   {opacity: 0.7}
+    //     40%   {opacity: 0.6}
+    //     50%   {opacity: 0.5}
+    //     60%   {opacity: 0.4}
+    //     70%   {opacity: 0.3}
+    //     80%   {opacity: 0.2}
+    //     90%   {opacity: 0.1}
+    // }
+    // @-moz-keyframes flickerAnimation{
+    //             0%   { opacity:1; }
+    //     10%   {opacity: 0.9}
+    //     20%   {opacity: 0.8}
+    //     30%   {opacity: 0.7}
+    //     40%   {opacity: 0.6}
+    //     50%   {opacity: 0.5}
+    //     60%   {opacity: 0.4}
+    //     70%   {opacity: 0.3}
+    //     80%   {opacity: 0.2}
+    //     90%   {opacity: 0.1}
+    // }
+    // @-webkit-keyframes flickerAnimation{
+    //             0%   { opacity:1; }
+    //     10%   {opacity: 0.9}
+    //     20%   {opacity: 0.8}
+    //     30%   {opacity: 0.7}
+    //     40%   {opacity: 0.6}
+    //     50%   {opacity: 0.5}
+    //     60%   {opacity: 0.4}
+    //     70%   {opacity: 0.3}
+    //     80%   {opacity: 0.2}
+    //     90%   {opacity: 0.1}
+    // }
+    // .animate-flicker {
+    //     -webkit-animation: flickerAnimation 1s infinite;
+    //     -moz-animation: flickerAnimation 1s infinite;
+    //     -o-animation: flickerAnimation 1s infinite;
+    //     animation: flickerAnimation 1s infinite;
+    // }
+    @keyframes breathe {
+        from { opacity: 1;}
+        to {opacity: 0;}
+    }
+
+    .breathe {
+        animation: breathe 3s steps(100) infinite alternate;
+        -webkit-animation: breathe 3s steps(100) infinite alternate;
+        -moz-animation: breathe 3s steps(100) infinite alternate;
+        -o-animation: breathe 3s steps(100) infinite alternate;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+    }
+
+    @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+
+    @-o-animation-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    } 
+
+
+    .spin {
+        -moz-animation: spin 15s linear infinite; 
+        animation: spin 15s linear infinite;
+        -webkit-animation: spin 15s linear infinite;
+        -o-animation: spin 15s linear infinite;
+    }
+}
